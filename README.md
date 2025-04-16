@@ -9,7 +9,7 @@ Here I put all Minecraft server scripts, Dockerfiles, stash resource packs that 
 
 ## Febru Tweaks Resource packs
 
-If you don't like the feel of the whole pack or are just curious whats inside of them, look no further than below.
+If you don't like the feel of the whole packs or are just curious whats inside of them, look no further than below.
 
 ### Febru's Tweaks 1.21
 
@@ -25,7 +25,7 @@ If you don't like the feel of the whole pack or are just curious whats inside of
 
 ### Febru's Tweaks 1.21.4
 
-All of the above (without Summer Day Panorama) +
+All of the above from 1.21 (without Summer Day Panorama) +
 
 - [Better Lanterns](https://modrinth.com/resourcepack/better-lanterns)
 - [Cherry Background](https://modrinth.com/resourcepack/cherry-background)
@@ -37,8 +37,7 @@ I also recommend using [Invisible Item Frames](https://modrinth.com/resourcepack
 
 ## Febru Server Dockerfiles
 
-In this repo you can find two dockerfiles: `Dockerfile.fabric` and `Dockerfile.purpur`. You can use them to build docker images for [Fabric Server](https://fabricmc.net/use/server/) or my beloved [Purpur](https://purpurmc.org/). The commands to build both images and run them as containers are provided below:
-
+In this repo you can find two dockerfiles: `Dockerfile.fabric` and `Dockerfile.purpur`. You can use them to build docker images for [Fabric Server](https://fabricmc.net/use/server/) or my beloved [Purpur](https://purpurmc.org/). The commands to build both images and run them as containers are provided below.
 
 To build a docker image clone this repo and run this command. Change the filename to `Dockerfile.fabric` if you want to build a Fabric image. You can also set the tag to whatever you want. There are also additional arguments you can add or edit inside Dockerfile to change the minecraft version. Default is 1.21.5 for Fabric and 1.21.4 for Purpur.
 
