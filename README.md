@@ -6,10 +6,12 @@ Here I put all Minecraft server scripts, Dockerfiles, stash resource packs that 
    * [Febru's Tweaks 1.21](#februs-tweaks-121)
    * [Febru's Tweaks 1.21.4](#februs-tweaks-1214)
 - [Febru Server Dockerfiles](#febru-server-dockerfiles)
+- [Febru MC Bash Scripts](#febru-mc-bash-scripts)
+   * [run.sh](#runsh)
 
 ## Febru Tweaks Resource packs
 
-If you don't like the feel of the whole packs or are just curious whats inside of them, look no further than below.
+In `resource_packs` folder you can find stash texture packs that I created from what I could gather all over the Internet. I made them to make Minecraft feel more alive but still keep its vanilla feel. If you prefer to add packs one-by-one or are just curious whats inside, look no further than below.
 
 ### Febru's Tweaks 1.21
 
@@ -39,7 +41,7 @@ I also recommend using [Invisible Item Frames](https://modrinth.com/resourcepack
 
 In this repo you can find two dockerfiles: `Dockerfile.fabric` and `Dockerfile.purpur`. You can use them to build docker images for [Fabric Server](https://fabricmc.net/use/server/) or my beloved [Purpur](https://purpurmc.org/). The commands to build both images and run them as containers are provided below.
 
-To build a docker image clone this repo and run this command. Change the filename to `Dockerfile.fabric` if you want to build a Fabric image. You can also set the tag to whatever you want. There are also additional arguments you can add or edit inside Dockerfile to change the minecraft version. Default is 1.21.5 for Fabric and 1.21.4 for Purpur.
+To build a docker image clone this repo and run this command. Change the filename to `Dockerfile.fabric` if you want to build a Fabric image. You can also set the tag to whatever you want. There are also additional arguments you can add or edit inside Dockerfile to change the Minecraft version. Default is 1.21.5 for Fabric and 1.21.4 for Purpur.
 
 ```bash
 docker build -f Dockerfile.purpur -t purpur-mc .
@@ -62,3 +64,19 @@ If you want to modify config files without having to sudo all the time, just mak
 ```bash
 sudo chown -R $(id -u):$(id -g) ./febru-fabric
 ```
+
+## Febru MC Bash Scripts
+
+In the `scripts` folder you can find different scripts that will help you to manage your Minecraft server. You can find the list of all scripts with their descriptions below:
+
+### run.sh
+
+This simple script takes care of your Minecraft server restarts. It also creates backup of your world by zipping world, world_nether and world_the_end directories and putting them in backup folder. What's more, it deletes the backup files if they are older than 7 days. In version 1.1 I also added Aikar's flags which make your server's performance a little bit better.
+
+Usage:
+
+```bash
+./run.sh <server_file_name.jar> <memory_amount> <days_to_keep_backups>
+```
+
+You can find more info about the setup of this script here: [https://github.com/februu/mc-bash](https://github.com/februu/mc-bash).
