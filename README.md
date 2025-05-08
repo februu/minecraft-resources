@@ -62,7 +62,7 @@ docker run -d \
 If you want to modify config files without having to sudo all the time, just make yourself the owner of the entire ./purpur-server folder. Run this command after the container is run and all the files are created.
 
 ```bash
-sudo chown -R $(id -u):$(id -g) ./febru-fabric
+sudo chown -R $(id -u):$(id -g) purpur-server
 ```
 
 ## Febru MC Bash Scripts
