@@ -3,11 +3,12 @@
 Here I put all Minecraft server scripts, Dockerfiles, stash resource packs that I create and more. If you need more information about them, just scroll down! 😊
 
 - [Febru Tweaks Resource packs](#febru-tweaks-resource-packs)
-   * [Febru's Tweaks 1.21](#februs-tweaks-121)
-   * [Febru's Tweaks 1.21.4](#februs-tweaks-1214)
+  - [Febru's Tweaks 1.21](#februs-tweaks-121)
+  - [Febru's Tweaks 1.21.4](#februs-tweaks-1214)
+- [Febru Mod Packs](#febru-mod-packs)
 - [Febru Server Dockerfiles](#febru-server-dockerfiles)
 - [Febru MC Bash Scripts](#febru-mc-bash-scripts)
-   * [run.sh](#runsh)
+  - [run.sh](#runsh)
 
 ## Febru Tweaks Resource packs
 
@@ -37,6 +38,14 @@ All of the above from 1.21 (without Summer Day Panorama) +
 
 I also recommend using [Invisible Item Frames](https://modrinth.com/resourcepack/invisible-item-frames) and [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations). If you use sodium, you'll need to install [Entity Model Features](https://modrinth.com/mod/entity-model-features) & [Entity Texture Features](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric) mods for latter to work properly.
 
+## Febru Mod Packs
+
+In `modpacks` folder you can find modpacks made by me. They mostly consist of QoL mods with couple of new features (new blocks, new biomes etc) as I really want the packs to stay as close as possible to the original Minecraft feel. You can download and import the modpacks using Modrinth Launcher. Credits for all the mods used in the packs go to original mods creators.
+
+### DrafuPack [2k25 Edition] 1.21.4
+
+The mods for this one were carefully picked by me and [@DragoonXVIII](https://github.com/DragoonXVIII) for our own survival server. They mostly focus on world generation - adding new biomes and new structures. There are also some QoL changes that will make your life much better.
+
 ## Febru Server Dockerfiles
 
 In this repo you can find two dockerfiles: `Dockerfile.fabric` and `Dockerfile.purpur`. You can use them to build docker images for [Fabric Server](https://fabricmc.net/use/server/) or my beloved [Purpur](https://purpurmc.org/). The commands to build both images and run them as containers are provided below.
@@ -57,7 +66,7 @@ docker run -d \
   -p 25565:25565 \
   --restart unless-stopped \
   purpur-mc
-``` 
+```
 
 If you want to modify config files without having to sudo all the time, just make yourself the owner of the entire ./purpur-server folder. Run this command after the container is run and all the files are created.
 
