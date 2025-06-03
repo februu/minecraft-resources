@@ -48,17 +48,17 @@ The mods for this one were carefully picked by me and [@DragoonXVIII](https://gi
 
 ## Febru Server Dockerfiles
 
-In this repo you can find two dockerfiles: `Dockerfile.fabric` and `Dockerfile.purpur`. You can use them to build docker images for [Fabric Server](https://fabricmc.net/use/server/) or my beloved [Purpur](https://purpurmc.org/). The commands to build both images and run them as containers are provided below.
+In this repo you can find two dockerfiles: `fabric.Dockerfile` and `purpur.Dockerfile`. You can use them to build docker images for [Fabric Server](https://fabricmc.net/use/server/) or my beloved [Purpur](https://purpurmc.org/). The commands to build both images and run them as containers are provided below.
 
-To build a docker image clone this repo and run this command. Change the filename to `Dockerfile.fabric` if you want to build a Fabric image. You can also set the tag to whatever you want. There are also additional arguments you can add or edit inside Dockerfile to change the Minecraft version. Default is 1.21.5 for Fabric and 1.21.4 for Purpur.
+To build a docker image clone this repo and run this command. Change the filename to `fabric.Dockerfile` if you want to build a Fabric image. You can also set the tag to whatever you want. There are also additional arguments you can add or edit inside Dockerfile to change the Minecraft version. Default is 1.21.5 for Fabric and 1.21.4 for Purpur.
 
-```bash
-docker build -f Dockerfile.purpur -t purpur-mc .
+```sh
+docker build -f purpur.Dockerfile -t purpur-mc .
 ```
 
 Run the container using the command below. This will run a container with name `purpur-server`, max memory size of 4 GB, server files will be stored in ./purpur-server directory, port 25565 will be opened and the container will automatically restart until stopped manually by docker command (using /stop inside container or on the server will cause it to restart - pretty neat right?).
 
-```bash
+```sh
 docker run -d \
   --name purpur-server \
   -e MEMORYSIZE=4G \
@@ -68,11 +68,20 @@ docker run -d \
   purpur-mc
 ```
 
-If you want to modify config files without having to sudo all the time, just make yourself the owner of the entire ./purpur-server folder. Run this command after the container is run and all the files are created.
+You can also use `docker-compose.yml` file to run the container. Just run the command below inside the directory where the compose file is placed.
 
-```bash
-sudo chown -R $(id -u):$(id -g) purpur-server
+```sh
+docker compose up -d
 ```
+
+The server will create the files. Make sure to change the `eula=true` in `purpur-server/eula.txt`. The server will then restart itself and run normally. You can join it then. You can easily modify commands or `docker-compose.yml` to run the fabric server instead just by replacing `purpur` phrase with `fabric` and executing every step that way.
+
+> [!TIP]
+> When docker creates server files, it will make the `root` user their owner. If you want to modify config files without having to sudo all the time, just make yourself the owner of the entire ./purpur-server folder. Run this command after the container is run and all the files are created.
+>
+> ```sh
+> sudo chown -R $(id -u):$(id -g) purpur-server
+> ```
 
 ## Febru MC Bash Scripts
 
@@ -84,7 +93,7 @@ This simple script takes care of your Minecraft server restarts. It also creates
 
 Usage:
 
-```bash
+```sh
 ./run.sh <server_file_name.jar> <memory_amount> <days_to_keep_backups>
 ```
 

@@ -1,0 +1,20 @@
+services:
+  fabric-server:
+    image: purpur-mc
+    container_name: purpur-server
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    environment:
+      - MEMORYSIZE=4G
+    volumes:
+      - ./purpur-server:/data
+    ports:
+      - '25565:25565/tcp'
+      - '25565:25565/udp'
+    networks:
+      - minecraft-net
+
+networks:
+  minecraft-net:
+    driver: bridge
