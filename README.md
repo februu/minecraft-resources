@@ -5,6 +5,7 @@ Here I put all Minecraft server scripts, Dockerfiles, stash resource packs that 
 - [Febru Tweaks Resource packs](#febru-tweaks-resource-packs)
   - [Febru's Tweaks 1.21](#februs-tweaks-121)
   - [Febru's Tweaks 1.21.4](#februs-tweaks-1214)
+  - [Febru's Tweaks Stash 26.3](#februs-tweaks-stash-263)
 - [Febru Mod Packs](#febru-mod-packs)
 - [Febru Server Dockerfiles](#febru-server-dockerfiles)
 - [Febru MC Bash Scripts](#febru-mc-bash-scripts)
@@ -37,6 +38,57 @@ All of the above from 1.21 (without Summer Day Panorama) +
 - [Spawned Eggs](https://modrinth.com/resourcepack/spawned-eggs)
 
 I also recommend using [Invisible Item Frames](https://modrinth.com/resourcepack/invisible-item-frames) and [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations). If you use sodium, you'll need to install [Entity Model Features](https://modrinth.com/mod/entity-model-features) & [Entity Texture Features](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric) mods for latter to work properly.
+
+### Febru's Tweaks Stash 26.3
+
+Newest version. All of the credits go to original creators. List of used resource packs can be found inside the zip file and below:
+
+1. Crosshair - Small X
+[https://modrinth.com/resourcepack/crosshair-small-x](https://modrinth.com/resourcepack/crosshair-small-x)
+2. FBGSFG > SGF > FBG
+[https://modrinth.com/resourcepack/fast-better-grass-for-simple-grass-flowers](https://modrinth.com/resourcepack/fast-better-grass-for-simple-grass-flowers)
+3. Simple Grass Flowers
+[https://modrinth.com/resourcepack/simple-grass-flowers](https://modrinth.com/resourcepack/simple-grass-flowers)
+4. Fast Better Grass
+[https://modrinth.com/resourcepack/fast-better-grass](https://modrinth.com/resourcepack/fast-better-grass)
+5. Motschen's Better Leaves
+[https://modrinth.com/resourcepack/better-leaves](https://modrinth.com/resourcepack/better-leaves)
+6. Minecraft Dungeons-style Boss Bars
+[https://modrinth.com/resourcepack/als-dungeons-boss-bars](https://modrinth.com/resourcepack/als-dungeons-boss-bars)
+7. Animated Items
+[https://modrinth.com/resourcepack/animated-items](https://modrinth.com/resourcepack/animated-items)
+8. Background - Cherry Grove
+[https://modrinth.com/resourcepack/background-cherry-grove](https://modrinth.com/resourcepack/background-cherry-grove)
+9. Cubic Sun & Moon
+[https://modrinth.com/resourcepack/cubic-sun-moon](https://modrinth.com/resourcepack/cubic-sun-moon)
+10. Better Lanterns
+[https://modrinth.com/resourcepack/better-lanterns](https://modrinth.com/resourcepack/better-lanterns)
+11. Roman Numerals for Enchant Icons
+[https://modrinth.com/resourcepack/roman-numerals-for-enchant-icons](https://modrinth.com/resourcepack/roman-numerals-for-enchant-icons)
+12. Enchant Icons
+[https://modrinth.com/resourcepack/enchant-icons-countxd](https://modrinth.com/resourcepack/enchant-icons-countxd)
+13. Enchantment Glows
+[https://modrinth.com/resourcepack/enchantment-glows](https://modrinth.com/resourcepack/enchantment-glows)
+14. Borderless Glass (by Nico4play)
+[https://modrinth.com/resourcepack/borderless-glass](https://modrinth.com/resourcepack/borderless-glass)
+15. Visual Armor Trims
+[https://modrinth.com/resourcepack/visual-armor-trims](https://modrinth.com/resourcepack/visual-armor-trims)
+16. NO HELMETS ALLOWED!
+[https://modrinth.com/resourcepack/invis-helmets](https://modrinth.com/resourcepack/invis-helmets)
+17. Leggings Fix
+[https://modrinth.com/resourcepack/leggings-fix](https://modrinth.com/resourcepack/leggings-fix)
+18. Low Shield
+[https://modrinth.com/resourcepack/low-shield-pack](https://modrinth.com/resourcepack/low-shield-pack)
+19. Low On Fire
+[https://modrinth.com/resourcepack/low-on-fire](https://modrinth.com/resourcepack/low-on-fire)
+20. Theone's Eating Animation Pack
+[https://modrinth.com/resourcepack/theones-eating-animation-pack](https://modrinth.com/resourcepack/theones-eating-animation-pack)
+21. Enchanted Books: Re-covered
+[https://modrinth.com/resourcepack/enchanted-books-re-covered](https://modrinth.com/resourcepack/enchanted-books-re-covered)
+22. Mandala's GUI + Dark mode
+[https://modrinth.com/resourcepack/mandalas-gui-dark-mode](https://modrinth.com/resourcepack/mandalas-gui-dark-mode)
+23. qrafty's Capitalized Font
+[https://modrinth.com/resourcepack/qraftys-capitalized-font](https://modrinth.com/resourcepack/qraftys-capitalized-font)
 
 ## Febru Mod Packs
 
