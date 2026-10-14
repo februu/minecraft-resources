@@ -89,6 +89,10 @@ Newest version. All of the credits go to original creators. List of used resourc
 [https://modrinth.com/resourcepack/mandalas-gui-dark-mode](https://modrinth.com/resourcepack/mandalas-gui-dark-mode)
 23. qrafty's Capitalized Font
 [https://modrinth.com/resourcepack/qraftys-capitalized-font](https://modrinth.com/resourcepack/qraftys-capitalized-font)
+24. (Bee's) Fancy Crops
+[https://modrinth.com/resourcepack/fancy-crops](https://modrinth.com/resourcepack/fancy-crops)
+25. Crops Re-Crafted
+[https://modrinth.com/resourcepack/crops-re-crafted](https://modrinth.com/resourcepack/crops-re-crafted)
 
 ## Febru Mod Packs
 
